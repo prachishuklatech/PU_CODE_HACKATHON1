@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username" class="left-label">Username</label>
+                    <input type="text" id="username" class="small-input" placeholder="Enter your username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password" class="left-label">Password</label>
+                    <input type="password" id="password" class="small-input" placeholder="Enter your password" required>
+                </div>
+                <div class="input-group remember-group">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <button type="button" id="loginButton">Login</button>
+                <p id="error-message"></p>
+                <p>New user? <a href="register.html">Register here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="loginscript.js"></script>
+</body>
+</html>

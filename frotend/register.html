@@ -1,0 +1,101 @@
+
+</html>-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Voice Registration</title>
+    <link rel="stylesheet" href="registerstyles.css">
+</head>
+<body>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <!-- Registration Form -->
+    <div class="container">
+        <div class="form-container">
+            <h1>Register</h1>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter strong password" required>
+                    <small class="password-hint">Use at least 8 characters, a mix of letters, numbers, and symbols.</small>
+                    <div id="password-strength"></div>
+                </div>
+
+                <!-- Voice Authentication Section -->
+                <div class="input-group">
+                    <label for="voice">Live Voice Authentication</label>
+                    <button type="button" id="startButton">Start Recording</button>
+                    <button type="button" id="stopButton" disabled>Stop Recording</button>
+                    <button type="button" id="replayButton" style="display:none;">Replay Voice</button>
+                    <div id="voiceFeedback">Voice feedback will appear here.</div>
+                    <div id="voicePlaybackSection" style="display:none;">
+                        <h3>Recorded Voice</h3>
+                        <audio id="audioPlayer" controls></audio>
+                    </div>
+                </div>
+                <form id="securityQuestionsForm">
+                    <h3>Select and Answer 3 Security Questions</h3>
+
+                    <label for="question1">Select First Security Question:</label>
+      <select id="question1" name="question1" required>
+        <option value="1">What is your mother's maiden name?</option>
+        <option value="2">What was the name of your first pet?</option>
+        <option value="3">In what city were you born?</option>
+        <option value="4">What is your favorite color?</option>
+        <option value="5">What was the name of your elementary school?</option>
+        <option value="6">What is your favorite food?</option>
+      </select><br>
+
+      <label for="answer1">Answer to First Question:</label>
+      <input type="text" id="answer1" name="answer1" required><br>
+
+      <label for="question2">Select Second Security Question:</label>
+      <select id="question2" name="question2" required>
+        <option value="1">What is your mother's maiden name?</option>
+        <option value="2">What was the name of your first pet?</option>
+        <option value="3">In what city were you born?</option>
+        <option value="4">What is your favorite color?</option>
+        <option value="5">What was the name of your elementary school?</option>
+        <option value="6">What is your favorite food?</option>
+      </select><br>
+
+      <label for="answer2">Answer to Second Question:</label>
+      <input type="text" id="answer2" name="answer2" required><br>
+
+      <label for="question3">Select Third Security Question:</label>
+      <select id="question3" name="question3" required>
+        <option value="1">What is your mother's maiden name?</option>
+        <option value="2">What was the name of your first pet?</option>
+        <option value="3">In what city were you born?</option>
+        <option value="4">What is your favorite color?</option>
+        <option value="5">What was the name of your elementary school?</option>
+        <option value="6">What is your favorite food?</option>
+      </select><br>
+
+      <label for="answer3">Answer to Third Question:</label>
+      <input type="text" id="answer3" name="answer3" required><br>
+
+    </form>
+                
+
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="registerscript.js"></script>
+</body>
+</html>
+
+
+
+

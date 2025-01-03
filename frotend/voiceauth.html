@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Authentication</title>
+    <link rel="stylesheet" href="voicestyles.css">
+</head>
+<body>
+    <!-- Background Waves -->
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+
+    <!-- Authentication Form -->
+    <div class="container">
+        <div class="form-container">
+            <h1>Voice Authentication</h1>
+            <p>Please record your voice to proceed with authentication.</p>
+
+            <button id="recordButton">Start Recording</button>
+            <button id="stopButton" disabled>Stop Recording</button>
+            <audio id="audioPlayback" controls></audio>
+            
+            <button id="submitButton" disabled>Submit Voice</button>
+            <p id="statusMessage"></p>
+            <p><a href="s.html">Alternate option</a></p>
+            <!-- <div><button id="Alternate option">Alternate option</button></div> -->
+        </div>
+    </div>
+
+    <script src="voice-auth.js"></script>
+</body>
+</html>
